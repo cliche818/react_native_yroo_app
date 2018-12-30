@@ -1,12 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, WebView } from 'react-native';
 
 export default class HomeScreen extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>This is just the home screen, does nothing</Text>
-      </View>
+      <WebView
+        source={{uri: 'https://yroo.com'}}
+        style={{marginTop: 20}}
+      />
     )
   }
 }
